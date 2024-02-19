@@ -1,14 +1,17 @@
 {{- if not (.Param "hideFooter") }}
 <footer class="footer">
+    Special thanks to <a href="https://giphy.com/vincemckelvie">Vince McKelvie</a>, <a href="https://github.com/adityatelange">adityalelange</a>, and <a href="https://chat.openai.com/">ChatGPT</a> <br>
     {{- if site.Copyright }}
     <span>{{ site.Copyright | markdownify }}</span>
     {{- else }}
     <span>&copy; {{ now.Year }} <a href="{{ "" | absLangURL }}">{{ site.Title }}</a></span>
     {{- end }}
     <span>
-        Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+        Additional Info:
+        <a href="https://presetpulse.com/terms">Terms</a> &
+        <a href="https://presetpulse.com/privacypolicy">Privacy Policy</a> &
+        <a href="https://presetpulse.com/faq">FAQ</a>
+        
     </span>
 </footer>
 {{- end }}
